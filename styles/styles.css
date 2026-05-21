@@ -1,6 +1,10 @@
+:root {
+    --padding: 10px;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 main {
@@ -11,7 +15,7 @@ aside {
     width: 15rem;
     margin: 10px;
     border: 1px solid green;
-    padding: 10px;
+    padding: var(--padding);
     background-color: bisque;
     color: rgb(6, 4, 74);
     text-align: center;

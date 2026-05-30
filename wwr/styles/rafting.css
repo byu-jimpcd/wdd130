@@ -179,6 +179,10 @@ footer p {
     gap: 10px;
 }
 
+.socialmedia a {
+    text-decoration: none;
+}
+
 .socialmedia img {
     width: 30px;
     height: auto;

@@ -108,7 +108,7 @@ section {
     padding: 16px;
     text-align: center;
     background-color: rgba(240, 230, 140, 0.7);
-    color: black;
+    color: var(--accent1-color);
 }
 
 .hero article img {

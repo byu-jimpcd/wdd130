@@ -134,6 +134,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: var(--secondary-color);
 }
 
 .history-content p {
@@ -146,12 +147,17 @@ section {
     height: auto;
 }
 
+.adventure-section {
+    background-color: var(--secondary-color);
+}
+
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin: 20px 0;
     text-align: center;
+    background-color: var(--secondary-color);
 }
 
 .adventure figure {

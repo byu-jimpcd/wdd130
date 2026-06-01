@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #5F9EA0;
-    --secondary-color: #bdd496;
-    --accent1-color: #483D8B;
-    --accent2-color: #F0E68C;
+    --primary-color: #2F7A7C;
+    --secondary-color: #D7E8B4;
+    --accent1-color: #2E2A5E;
+    --accent2-color: #F7E58A;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -49,7 +49,14 @@ header img {
 }
 
 .navigation li a {
+    color: var(--accent1-color);
     text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation li a:hover {
+    color: white;
+    background-color: var(--accent1-color);
 }
 
 h1,
@@ -91,7 +98,7 @@ h2 {
     margin: 0;
     padding: 16px;
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: white;
     text-align: center;
 }
 

@@ -308,6 +308,7 @@ button {
 
 .company-info h1 {
     margin-bottom: 1rem;
+    color: var(--accent1-color);
 }
 
 .company-info p {

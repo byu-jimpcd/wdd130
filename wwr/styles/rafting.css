@@ -18,25 +18,35 @@ body {
     color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
+main {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+header,
+footer {
+    width: 100%;
+}
+
 header {
     background-color: var(--accent1-color);
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    padding: 20px 40px;
-    max-width: 1000px;
+    width: 100%;
 }
 
 header img {
     width: 150px;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+
+    padding: 20px 40px;
 }
 
 .navigation {
@@ -50,6 +60,9 @@ header img {
 }
 
 .navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
     color: var(--accent1-color);
     text-decoration: none;
     font-weight: bold;
@@ -66,22 +79,22 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
 .hero {
     position: relative;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+article {
+    padding: 8px;
 }
 
 .hero img {
     display: block;
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .hero h1 {
@@ -104,7 +117,7 @@ h2 {
 }
 
 section {
-    margin: 16px 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -156,7 +169,7 @@ section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    margin: 20px 0;
+    margin: 0;
     text-align: center;
     background-color: var(--secondary-color);
 }
@@ -176,9 +189,18 @@ section {
 footer {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
+    width: 100%;
+
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 10px 20px;
 }
 
@@ -314,4 +336,174 @@ button {
 .company-info p {
     margin: 0.5rem 0;
     padding: 0;
+}
+
+.hero-home {
+    position: relative;
+}
+
+.hero-home img {
+    width: 100%;
+    display: block;
+}
+
+.hero-message {
+    position: absolute;
+    color: white;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 2rem;
+}
+
+.hero-message a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.grid-card {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.call-to-action {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.call-to-action p {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.call-to-action-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-to-action-button:hover {
+    background-color: var(--primary-color);
+}
+
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    padding: 1rem;
+    max-width: 250px;
+}
+
+.newsletter-form button {
+    margin: 0;
+}
+
+.newsletter,
+.call-to-action,
+.home-grid,
+.company-info,
+.contact,
+.employees {
+    margin: 0;
+}
+
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+
+.trip-cta {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.trip-cta h1 {
+    color: var(--accent1-color);
+    margin-bottom: 1rem;
+}
+
+.trip-cta p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.trip-cards {
+    display: grid;
+    gap: 2rem
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 2rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--accent1-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+th {
+    background-color: var(--accent1-color);
+    color: white;
 }
